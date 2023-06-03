@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+:root { 
+    --handWriting : 'Freehand', cursive;
+    --normalFont : 'Kanit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--normalFont);
+}
+.main { 
+    width: 70%;
+    display: block;
+    margin: 8% auto auto auto;
+    min-height: 300vh;
+}
+.main-display-set { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.main-display-set-center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.main-first-1 h1 { 
+    transform: rotate(90deg);
+    font-size: 130px;
+    opacity: 0.1;
+    font-family: var(--handWriting);
+}
+.main-first-1 img { 
+    max-width: 70%;
+}
+.gsap-main-img{
+    visibility: hidden;
+}
+.main-title{
+    visibility: hidden;
+}
+.gsap-main-title{
+    visibility: hidden;
+}
+.main-first-2 h1{ 
+    font-size: 55px;
+    opacity: 0.6;
+}
+.main-2-img{
+    visibility: hidden;
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+}
+.main-second{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.main-second-wrapper{
+    margin-top: 300px;
+}
+.main-second h1{
+    text-align: center;
+    font-size: 40px;
+    opacity: 0.2;
+    font-family: var(--handWriting);
+}
+.main-third {
+    margin-top: -80px;
+    position: relative;
+}
+.main-content { 
+    width: 45% ;
+}
+.main-third-content h1 { 
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: var(--handWriting);
+}
+.main-third-content p { 
+    text-align: center;
+    line-height: 30px;
+}
+.content-2 { 
+    margin-top: 170px;
+}
+.main-content h1 { 
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: var(--handWriting);
+}
+.main-content p { 
+    text-align: center;
+    line-height: 30px;
+}
+.main-content img { 
+    max-width: 85%;
+    display: block;
+    margin: auto;
+}
+.content-3{
+    position: relative;
+    margin-top: -200px;
+}
+.content-4{
+    margin-top: 150px;
+}
+.section-five-title{
+    font-family: var(--handWriting);
+    margin-top: -150px;
+}
+.section-five-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.section-five-card-1 { 
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    font-size: 150px;
+    z-index: -1;
+    opacity: 0.10;
+    font-family: var(--handWriting);
+    top: -120px;
+}
+.section-five-card div { 
+    display: inline-block;
+    width: 45%;
+}
+.section-five-card img{
+    width: 86%;
+}
+.section-five-card h1 { 
+    font-family: var(--handWriting);
+    text-align: center;
+}
+.section-five-card p { 
+    text-align: center;
+    line-height: 30px;
+}
+.section-six-title { 
+    width: 47%;
+    margin-bottom: 25px ;
+}
+.words-2 { 
+    display: block;
+    margin: auto 0 auto auto;
+}
