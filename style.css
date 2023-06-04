@@ -154,3 +154,21 @@
     display: block;
     margin: auto 0 auto auto;
 }
+.main-seven{
+    margin-bottom: 110px;
+}
+.main-seven-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+.main-seven-wrapper div { 
+    width: 45%;
+}
+.main-seven-wrapper img { 
+    transform: skewX(-3deg);
+    max-width: 100%;
+}
+.main-seven-wrapper p { 
+    line-height: 30px;
+}

@@ -155,3 +155,32 @@ TL.to('.words-1' , {
    end: "top 5%",
  }
 })
+
+gsap.to('.scroll-img', {
+  y: 350,
+  x: 550,
+  skewY: 0,
+  skewX: -5,
+  ease: "power4.out",
+  onComplete: function () {
+    gsap.to('.scroll-img', {
+      y: 700,
+      x: 0,
+      skewY: 5,
+      skewX: 0,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".main-seven2",
+        start: "top 40%",
+        end: "top 5%",
+        scrub: 1
+      }
+    });
+  },
+  scrollTrigger: {
+    trigger: ".main-seven",
+    start: "top 50%",
+    end: "top 5%",
+    scrub: 1
+  }
+})
