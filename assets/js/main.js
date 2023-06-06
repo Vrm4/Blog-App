@@ -161,27 +161,25 @@ gsap.to('.scroll-img', {
   x: 550,
   skewY: 0,
   skewX: -5,
-  ease: "power4.out",
   onComplete: function () {
     gsap.to('.scroll-img', {
       y: 700,
       x: 0,
       skewY: 5,
       skewX: 0,
-      ease: "power4.out",
       scrollTrigger: {
         trigger: ".main-seven2",
-        start: "top 40%",
-        end: "top 5%",
-        scrub: 1
+        start: "top 45%",
+        end: "top 15%",
+        scrub: 1, 
       }
     });
   },
   scrollTrigger: {
     trigger: ".main-seven",
     start: "top 50%",
-    end: "top 5%",
-    scrub: 1
+    end: "top 25%",
+    scrub: 1,
   }
 })
 
@@ -323,7 +321,7 @@ ScrollTrigger.create({
   trigger: '.section-info',
   pin: '.info',
   start: 'top 40%',
-  end: 'bottom 55%',
+  end: 'bottom 45%',
 })
 const sections = document.querySelectorAll('.section-info-set')
 
