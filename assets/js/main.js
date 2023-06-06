@@ -184,3 +184,172 @@ gsap.to('.scroll-img', {
     scrub: 1
   }
 })
+
+gsap.from('.card1' , { 
+  x : "-200%" ,  
+  autoAlpha : 0 , 
+  ease: "power4.out", 
+  scrollTrigger: {
+   trigger: ".section-eigth-wrapper",
+   scrub: 0.7,
+   start: "top 65%",
+   end: "top 35%",
+ }
+})
+
+gsap.from('.card2' , { 
+  x : '200%' ,  
+  autoAlpha : 0 ,
+  ease: "power4.out", 
+  scrollTrigger: {
+   trigger: ".section-eigth-wrapper",
+   scrub: 0.7,
+   start: "top 65%",
+   end: "top 35%",
+ }
+})
+
+gsap.from('.card3' , { 
+  y : '100%' ,  
+  autoAlpha : 0 ,
+  ease: "power4.out", 
+  scrollTrigger: {
+   trigger: ".card3",
+   scrub: 0.5,
+   start: "top 75%",
+   end: "top 50%",
+ }
+})
+
+gsap.from('.card4' , { 
+  y : '100%' ,  
+  autoAlpha : 0 ,
+  ease: "power4.out", 
+  scrollTrigger: {
+   trigger: ".card4",
+   scrub: 2,
+   start: "top 75%",
+   end: "top 50%",
+ }
+})
+
+gsap.from('.card5' , { 
+  y : '100%' ,  
+  autoAlpha : 0 ,
+  ease: "power4.out", 
+  scrollTrigger: {
+   trigger: ".card5",
+   scrub: 2,
+   start: "top 85%",
+   end: "top 80%",
+ }
+})
+
+gsap.from('.card6' , { 
+  y : '100%' ,  
+  autoAlpha : 0 ,
+  ease: "power4.out", 
+  scrollTrigger: {
+   trigger: ".card6",
+   scrub: 2,
+   start: "top 85%",
+   end: "top 70%",
+ }
+})
+
+
+gsap.to('.content-9' , { 
+  y : 100 ,  
+  ease: "power3.out", 
+  scrollTrigger: {
+   trigger: ".card6",
+   scrub: 0.7,
+   start: "top 50%",
+   end: "top 30%",
+ }
+})
+
+gsap.to('.content-10' , { 
+  y : -100 ,  
+  ease: "power3.out", 
+  scrollTrigger: {
+   trigger: ".card6",
+   scrub: 0.7,
+   start: "top 50%",
+   end: "top 30%",
+ }
+})
+
+gsap.set('.content-11' , { y : 100})
+gsap.to('.content-11' , { 
+  y : 180 ,  
+  ease: "power3.out", 
+  scrollTrigger: {
+   trigger: ".content-11",
+   scrub: 0.7,
+   start: "top 85%",
+   end: "top 30%",
+ }
+})
+
+gsap.set('.content-12' , { y : 70})
+gsap.to('.content-12' , { 
+  y : -60 ,  
+  ease: "power3.out", 
+  scrollTrigger: {
+   trigger: ".content-12",
+   scrub: 1.5,
+   start: "top 85%",
+   end: "top 30%",
+ }
+})
+
+const imagaAndTitle = [
+  {
+    img : '/assets/images/factory.jpg' , 
+    title : '42 Factory'
+  }, 
+  {
+    img : '/assets/images/school.jpg' , 
+    title : '150 School'
+  }, 
+  {
+    img : '/assets/images/coin.jpg' , 
+    title : '0 Debt'
+  }, 
+]
+
+ScrollTrigger.create({
+  trigger: '.section-info',
+  pin: '.info',
+  start: 'top 40%',
+  end: 'bottom 55%',
+})
+const sections = document.querySelectorAll('.section-info-set')
+
+sections.forEach((section, index) => {
+
+  ScrollTrigger.create({
+    trigger: section,
+    start: 'top center',
+    end: "bottom center",
+    onEnter: () => {
+      gsap.set('.info img', {
+        attr: {src: imagaAndTitle[index].img}
+      })
+      gsap.set('.info h4', {
+        innerText: imagaAndTitle[index].title
+      })
+    },
+    onEnterBack: () => {
+      gsap.set('.info img', {
+        attr: {src: imagaAndTitle[index].img}
+      })
+      gsap.set('.info h4', {
+        innerText: imagaAndTitle[index].title
+      })
+    }
+  })
+
+})
+

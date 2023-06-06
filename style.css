@@ -3,6 +3,7 @@
 :root { 
     --handWriting : 'Freehand', cursive;
     --normalFont : 'Kanit', sans-serif;
+    --boxShadow : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 *{
     margin: 0;
@@ -171,4 +172,67 @@
 }
 .main-seven-wrapper p { 
     line-height: 30px;
+}
+.section-eigth-wrapper h1{
+    font-family: var(--handWriting);
+}
+.section-eigth-wrapper-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.4em;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+.section-eigth-card{
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: var(--boxShadow);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}   
+.section-eigth-card img{
+    width: 60px;
+    border-radius: 10px;
+}
+.section-eigth-card p { 
+    font-size: 12px;
+    margin-left: 10px;
+}
+.section-nine{
+    margin-top: 220px;
+}
+.section-nine-wrapper { 
+    display: flex;
+    justify-content: space-between;
+}
+.section-nine-wrapper div{
+    width: 45%;
+}
+.section-nine-wrapper img{ 
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.revalative-set{
+    position: relative;
+}
+.info{
+    position: absolute;
+    left: 10px;
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.info img { 
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+.info h4 { 
+    text-align: center;
+    font-size: 11px;
 }
