@@ -157,19 +157,19 @@ TL.to('.words-1' , {
 })
 
 gsap.to('.scroll-img', {
-  y: 350,
+  y: 450,
   x: 550,
   skewY: 0,
   skewX: -5,
   onComplete: function () {
     gsap.to('.scroll-img', {
-      y: 700,
+      y: 900,
       x: 0,
       skewY: 5,
       skewX: 0,
       scrollTrigger: {
         trigger: ".main-seven2",
-        start: "top 45%",
+        start: "top 55%",
         end: "top 15%",
         scrub: 1, 
       }
@@ -177,7 +177,7 @@ gsap.to('.scroll-img', {
   },
   scrollTrigger: {
     trigger: ".main-seven",
-    start: "top 50%",
+    start: "top 45%",
     end: "top 25%",
     scrub: 1,
   }
@@ -305,15 +305,15 @@ gsap.to('.content-12' , {
 const imagaAndTitle = [
   {
     img : '/assets/images/factory.jpg' , 
-    title : '42 Factory'
+    title : '46 Factory'
   }, 
   {
     img : '/assets/images/school.jpg' , 
-    title : '150 School'
+    title : '5062 School'
   }, 
   {
     img : '/assets/images/coin.jpg' , 
-    title : '0 Debt'
+    title : '-107,5 M Gold Lira Debt'
   }, 
 ]
 
