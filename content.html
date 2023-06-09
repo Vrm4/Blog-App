@@ -8,215 +8,220 @@
     <title>Content</title>
 </head>
 <body>
-    <svg onclick="window.location.href='https://github.com/Vrm4/Blog-App'" xmlns="http://www.w3.org/2000/svg" id="github" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    <main class="main">
-        <section class="main-first">
-            <div class="main-display-set main-first-1">
-                 <h1 class="gsap-main-title">1881</h1>
-                 <img class="gsap-main-img" src="./assets/images/Main.jpg" alt="">
-            </div>
-            <div class="main-display-set-center main-first-2">
-                <h1 class="gsap-main-title-2 main-title">Mustafa Kemal Atatürk</h1>
-                <img class="main-2-img" src="./assets/images/MKemal.jpeg" alt="">
-            </div>
-        </section>
-        <section class="main-second">
-            <div class="main-second-wrapper">
-                <h1 class="gsap-main-title-3">“If one day, my words are against science, choose science.” </h1>
-            </div>
-        </section>
-        <section class="main-third">
-            <div class="main-display-set">
-                <div class="main-content main-third-content content-1">
-                    <h1>Elementary School: Shaping the Future Leader</h1>
-                    <p>
-                        During his early years, Mustafa Kemal Atatürk displayed remarkable intellectual curiosity and determination that would later define his leadership qualities. As a student in his first elementary school, he exhibited an unwavering thirst for knowledge and an exceptional aptitude for various subjects. With a sharp mind and an indomitable spirit, he quickly grasped the concepts taught by his teachers and went above and beyond the expectations. Mustafa Kemal's outstanding academic performance and his ability to inspire his peers earned him the admiration and respect of both his classmates and instructors. Even at a young age, he exhibited a keen sense of responsibility and a strong dedication to his studies, setting the stage for his future achievements.
-                    </p>
+    <h1 id="res-title"></h1>
+    <div id="responsive-div">
+        <svg onclick="window.location.href='https://github.com/Vrm4/Blog-App'" xmlns="http://www.w3.org/2000/svg" id="github" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+        <main class="main">
+            <section class="main-first">
+                <div class="main-display-set main-first-1">
+                     <h1 class="gsap-main-title">1881</h1>
+                     <img class="gsap-main-img" src="./assets/images/Main.jpg" alt="">
                 </div>
-                <div class="main-content main-third-content content-2">
-                    <h1>Middle School: Fostering a Passion for Independence</h1>
-                    <p>
-                        In middle school, Mustafa Kemal Atatürk's fervor for independence and national identity started to take shape. He became acutely aware of the importance of unity and self-determination for his nation, which was struggling under the weight of foreign influence. With an unwavering belief in the potential of his people, he actively participated in discussions and debates centered around the political climate of the time. Mustafa Kemal's persuasive oratory skills and his ability to rally his fellow students towards a common cause became evident during these years. His enthusiasm for national liberation and his unwavering determination to pave the way for a brighter future for Turkey were key factors that would eventually define his legacy.
-                    </p>
+                <div class="main-display-set-center main-first-2">
+                    <h1 class="gsap-main-title-2 main-title">Mustafa Kemal Atatürk</h1>
+                    <img class="main-2-img" src="./assets/images/MKemal.jpeg" alt="">
                 </div>
-            </div>
-        </section>
-        <section class="main-four">
-            <div class="main-display-set">
-                <div class="main-content content-3">
-                    <img src="./assets/images/MKemal2.jpeg" alt="">
+            </section>
+            <section class="main-second">
+                <div class="main-second-wrapper">
+                    <h1 class="gsap-main-title-3">“If one day, my words are against science, choose science.” </h1>
                 </div>
-                <div class="main-content main-third-content content-4">
-                    <h1>High School: Cultivating Leadership and Vision</h1>
-                    <p>
-                        In high school, Mustafa Kemal Atatürk's leadership qualities and visionary mindset continued to flourish. As a student, he displayed exceptional leadership skills, inspiring his classmates to strive for excellence and actively engage in intellectual pursuits. With a deep appreciation for history, culture, and literature, he delved into a wide range of subjects, broadening his understanding of the world and shaping his perspective on the future of his country. Mustafa Kemal's unwavering commitment to progress and his relentless pursuit of knowledge propelled him towards becoming a well-rounded individual, equipped with the tools necessary to lead his nation through turbulent times. His high school years laid the foundation for the transformational leader he would become, leaving an indelible mark on the history of Turkey.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <h1 class="section-five-title">Military Academy: The Defiance of a Pair of Blue Eyes To World</h1>
-        <section class="main-five">
-            <div class="main-display-set-center">
-                <div class="section-five-card">
-                    <h1 class="section-five-card-1">1896</h1>
-                    <div class="section-five-card-2" >
-                        <img src="./assets/images/MKemal4.png" alt="">
-                    </div>
-                    <div class="section-five-card-3">
-                        <h1>Military Academy</h1>
+            </section>
+            <section class="main-third">
+                <div class="main-display-set">
+                    <div class="main-content main-third-content content-1">
+                        <h1>Elementary School: Shaping the Future Leader</h1>
                         <p>
-                            During his years at the Military Academy, Mustafa Kemal Atatürk's exceptional qualities as a leader continued to develop and flourish. As a student, he exhibited remarkable leadership skills that inspired his peers to strive for excellence and actively participate in intellectual endeavors. Atatürk's insatiable curiosity and profound understanding of history, culture, and literature prompted him to explore a diverse range of subjects, expanding his knowledge and shaping his vision for the future of his nation. His unwavering dedication to progress and relentless pursuit of knowledge laid the groundwork for him to become a well-rounded individual, armed with the necessary tools to guide his country through challenging times. Atatürk's experiences and education at the Military Academy played a crucial role in molding him into the transformative leader who left an enduring legacy in the annals of Turkish history.
+                            During his early years, Mustafa Kemal Atatürk displayed remarkable intellectual curiosity and determination that would later define his leadership qualities. As a student in his first elementary school, he exhibited an unwavering thirst for knowledge and an exceptional aptitude for various subjects. With a sharp mind and an indomitable spirit, he quickly grasped the concepts taught by his teachers and went above and beyond the expectations. Mustafa Kemal's outstanding academic performance and his ability to inspire his peers earned him the admiration and respect of both his classmates and instructors. Even at a young age, he exhibited a keen sense of responsibility and a strong dedication to his studies, setting the stage for his future achievements.
+                        </p>
+                    </div>
+                    <div class="main-content main-third-content content-2">
+                        <h1>Middle School: Fostering a Passion for Independence</h1>
+                        <p>
+                            In middle school, Mustafa Kemal Atatürk's fervor for independence and national identity started to take shape. He became acutely aware of the importance of unity and self-determination for his nation, which was struggling under the weight of foreign influence. With an unwavering belief in the potential of his people, he actively participated in discussions and debates centered around the political climate of the time. Mustafa Kemal's persuasive oratory skills and his ability to rally his fellow students towards a common cause became evident during these years. His enthusiasm for national liberation and his unwavering determination to pave the way for a brighter future for Turkey were key factors that would eventually define his legacy.
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="main-second section-six">
-            <div class="main-second-wrapper">
-                <h1 class="section-six-title words-1">“ Peace at home, peace in the world. ” </h1>
-                <h1 class="section-six-title words-2">“ Turkey's true master is the peasant. ” </h1>
-                <h1 class="section-six-title words-3">“ Sovereignty is not given, it is taken. ” </h1>
-            </div>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <h1 class="section-five-title">War of Independence: The Resistance of a Nation.</h1>
-        <section class="main-seven">
-            <div class="main-seven-wrapper">
-                <div>
-                    <img class="scroll-img" src="./assets/images/TurkishWarOfIndependence.jpg" alt="">
+            </section>
+            <section class="main-four">
+                <div class="main-display-set">
+                    <div class="main-content content-3">
+                        <img src="./assets/images/MKemal2.jpeg" alt="">
+                    </div>
+                    <div class="main-content main-third-content content-4">
+                        <h1>High School: Cultivating Leadership and Vision</h1>
+                        <p>
+                            In high school, Mustafa Kemal Atatürk's leadership qualities and visionary mindset continued to flourish. As a student, he displayed exceptional leadership skills, inspiring his classmates to strive for excellence and actively engage in intellectual pursuits. With a deep appreciation for history, culture, and literature, he delved into a wide range of subjects, broadening his understanding of the world and shaping his perspective on the future of his country. Mustafa Kemal's unwavering commitment to progress and his relentless pursuit of knowledge propelled him towards becoming a well-rounded individual, equipped with the tools necessary to lead his nation through turbulent times. His high school years laid the foundation for the transformational leader he would become, leaving an indelible mark on the history of Turkey.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        The Turkish War of Independence, fought from 1919 to 1922, stands as a testament to the indomitable spirit, unwavering determination, and unwavering perseverance of the Turkish people. In the face of overwhelming odds, the Turkish nation displayed unparalleled resilience and refused to surrender. Despite facing a well-equipped and formidable enemy, they refused to yield, firmly believing in their rightful place in the world and their right to self-determination. The Turks' unyielding resolve and unbreakable spirit became the driving force behind their fight for independence.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="main-seven main-seven2">
-            <div class="main-seven-wrapper">
-                <div>
-                    <p>
-                        At the forefront of the Turkish War of Independence stood Mustafa Kemal Atatürk, a visionary leader who played a pivotal role in shaping the course of the conflict. Atatürk's strategic brilliance, unwavering commitment to the cause, and ability to inspire and unite the Turkish people were instrumental in their ultimate triumph. With his exceptional leadership skills, Atatürk rallied the nation, instilling in them a sense of purpose and instigating a profound transformation. He led by example, exhibiting courage, determination, and an unwavering belief in the Turkish people's ability to overcome any challenge. Atatürk's leadership and guidance were vital in steering the Turkish nation towards victory and establishing the Republic of Turkey.
-                    </p>
-                </div>
-                <div>
-                </div>
-            </div>
-        </section>
-        <section class="main-seven main-seven2">
-            <div class="main-seven-wrapper">
-                <div>
-                </div>
-                <div>
-                    <p>
-                        The Turkish people's unwavering dedication and steadfastness throughout the war were exemplified by their resolute determination to achieve independence. Despite facing significant hardships, including economic struggles, scarce resources, and external pressures, the Turkish nation persevered. The people's unyielding commitment to their cause fueled their efforts, allowing them to overcome obstacles and emerge triumphant. Their resilience and unity became the cornerstone of the war effort, creating a collective strength that propelled them forward. The Turkish War of Independence stands as a testament to the Turkish people's unwavering resolve, their refusal to accept defeat, and their unshakeable belief in the pursuit of freedom and sovereignty.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <h1 class="section-five-title">Reforms: The Rebirth of a Nation</h1>
-        <section class="section-info">
-            <div class="info">
-                <img src="./assets/images/factory.jpg" alt="">
-                <h4>46 Factory</h4>
-            </div>
- 
-        <section class="section-eigth section-info-set">
-            <div class="section-eigth-wrapper revalative-set">
-                <h1>“ The Republic of Turkey will rise above the level of contemporary civilizations. ”</h1> 
-                <div class="section-eigth-wrapper-2">
-                    <div class="section-eigth-card card1">
-                        <div>
-                            <img src="./assets/images/modernFedora.jpg" alt="">
+            </section>
+            <h1 class="section-five-title">Military Academy: The Defiance of a Pair of Blue Eyes To World</h1>
+            <section class="main-five">
+                <div class="main-display-set-center">
+                    <div class="section-five-card">
+                        <h1 class="section-five-card-1">1896</h1>
+                        <div class="section-five-card-2" >
+                            <img src="./assets/images/MKemal4.png" alt="">
                         </div>
-                        <div>
-                            <p>Secularism: The separation of religion and state became the foundation for a secular society.</p>
+                        <div class="section-five-card-3">
+                            <h1>Military Academy</h1>
+                            <p>
+                                During his years at the Military Academy, Mustafa Kemal Atatürk's exceptional qualities as a leader continued to develop and flourish. As a student, he exhibited remarkable leadership skills that inspired his peers to strive for excellence and actively participate in intellectual endeavors. Atatürk's insatiable curiosity and profound understanding of history, culture, and literature prompted him to explore a diverse range of subjects, expanding his knowledge and shaping his vision for the future of his nation. His unwavering dedication to progress and relentless pursuit of knowledge laid the groundwork for him to become a well-rounded individual, armed with the necessary tools to guide his country through challenging times. Atatürk's experiences and education at the Military Academy played a crucial role in molding him into the transformative leader who left an enduring legacy in the annals of Turkish history.
+                            </p>
                         </div>
                     </div>
-                    <div class="section-eigth-card card2">
-                        <div>
-                            <img src="./assets/images/modernFedora.jpg" alt="">
-                        </div>
-                        <div>
-                            <p>Legal Reforms: The legal system was modernized, drawing inspiration from the Swiss Civil Code.</p>
-                        </div>
+                </div>
+            </section>
+            <section class="main-second section-six">
+                <div class="main-second-wrapper">
+                    <h1 class="section-six-title words-1">“ Peace at home, peace in the world. ” </h1>
+                    <h1 class="section-six-title words-2">“ Turkey's true master is the peasant. ” </h1>
+                    <h1 class="section-six-title words-3">“ Sovereignty is not given, it is taken. ” </h1>
+                </div>
+            </section>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h1 class="section-five-title">War of Independence: The Resistance of a Nation.</h1>
+            <section class="main-seven">
+                <div class="main-seven-wrapper">
+                    <div>
+                        <img class="scroll-img" src="./assets/images/TurkishWarOfIndependence.jpg" alt="">
                     </div>
-                    <div class="section-eigth-card card3">
-                        <div>
-                            <img src="./assets/images/modernFedora.jpg" alt="">
-                        </div>
-                        <div>
-                            <p>Education Reform: Advancements were made through the adoption of the Latin alphabet and the implementation of a secular education system.</p>
-                        </div>
+                    <div>
+                        <p>
+                            The Turkish War of Independence, fought from 1919 to 1922, stands as a testament to the indomitable spirit, unwavering determination, and unwavering perseverance of the Turkish people. In the face of overwhelming odds, the Turkish nation displayed unparalleled resilience and refused to surrender. Despite facing a well-equipped and formidable enemy, they refused to yield, firmly believing in their rightful place in the world and their right to self-determination. The Turks' unyielding resolve and unbreakable spirit became the driving force behind their fight for independence.
+                        </p>
                     </div>
-                    <div class="section-eigth-card card4">
-                        <div>
-                            <img src="./assets/images/modernFedora.jpg" alt="">
-                        </div>
-                        <div>
-                            <p>Women's Rights: Women were granted the right to vote and be elected, emphasizing equality.</p>
-                        </div>
+                </div>
+            </section>
+            <section class="main-seven main-seven2">
+                <div class="main-seven-wrapper">
+                    <div>
+                        <p>
+                            At the forefront of the Turkish War of Independence stood Mustafa Kemal Atatürk, a visionary leader who played a pivotal role in shaping the course of the conflict. Atatürk's strategic brilliance, unwavering commitment to the cause, and ability to inspire and unite the Turkish people were instrumental in their ultimate triumph. With his exceptional leadership skills, Atatürk rallied the nation, instilling in them a sense of purpose and instigating a profound transformation. He led by example, exhibiting courage, determination, and an unwavering belief in the Turkish people's ability to overcome any challenge. Atatürk's leadership and guidance were vital in steering the Turkish nation towards victory and establishing the Republic of Turkey.
+                        </p>
                     </div>
-                    <div class="section-eigth-card card5">
-                        <div>
-                            <img src="./assets/images/modernFedora.jpg" alt="">
-                        </div>
-                        <div>
-                            <p>Economic Reform: Economic development was promoted through industrialization and agricultural reforms.</p>
-                        </div>
+                    <div>
                     </div>
-                    <div class="section-eigth-card card6">
-                        <div>
-                            <img src="./assets/images/modernFedora.jpg" alt="">
-                        </div>
-                        <div>
-                            <p>Atatürk's Principles: The revolutionary principles shaped Turkey's modern identity.</p>
-                        </div>
+                </div>
+            </section>
+            <section class="main-seven main-seven2">
+                <div class="main-seven-wrapper">
+                    <div>
                     </div>
-                </div>  
-            </div>
+                    <div>
+                        <p>
+                            The Turkish people's unwavering dedication and steadfastness throughout the war were exemplified by their resolute determination to achieve independence. Despite facing significant hardships, including economic struggles, scarce resources, and external pressures, the Turkish nation persevered. The people's unyielding commitment to their cause fueled their efforts, allowing them to overcome obstacles and emerge triumphant. Their resilience and unity became the cornerstone of the war effort, creating a collective strength that propelled them forward. The Turkish War of Independence stands as a testament to the Turkish people's unwavering resolve, their refusal to accept defeat, and their unshakeable belief in the pursuit of freedom and sovereignty.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1 class="section-five-title">Reforms: The Rebirth of a Nation</h1>
+            <section class="section-info">
+                <div class="info">
+                    <div>
+                        <img src="./assets/images/factory.jpg" alt="">
+                        <h4>46 Factory</h4>
+                    </div>
+                </div>
+     
+            <section class="section-eigth section-info-set">
+                <div class="section-eigth-wrapper revalative-set">
+                    <h1>“ The Republic of Turkey will rise above the level of contemporary civilizations. ”</h1> 
+                    <div class="section-eigth-wrapper-2">
+                        <div class="section-eigth-card card1">
+                            <div>
+                                <img src="./assets/images/modernFedora.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Secularism: The separation of religion and state became the foundation for a secular society.</p>
+                            </div>
+                        </div>
+                        <div class="section-eigth-card card2">
+                            <div>
+                                <img src="./assets/images/modernFedora.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Legal Reforms: The legal system was modernized, drawing inspiration from the Swiss Civil Code.</p>
+                            </div>
+                        </div>
+                        <div class="section-eigth-card card3">
+                            <div>
+                                <img src="./assets/images/modernFedora.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Education Reform: Advancements were made through the adoption of the Latin alphabet and the implementation of a secular education system.</p>
+                            </div>
+                        </div>
+                        <div class="section-eigth-card card4">
+                            <div>
+                                <img src="./assets/images/modernFedora.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Women's Rights: Women were granted the right to vote and be elected, emphasizing equality.</p>
+                            </div>
+                        </div>
+                        <div class="section-eigth-card card5">
+                            <div>
+                                <img src="./assets/images/modernFedora.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Economic Reform: Economic development was promoted through industrialization and agricultural reforms.</p>
+                            </div>
+                        </div>
+                        <div class="section-eigth-card card6">
+                            <div>
+                                <img src="./assets/images/modernFedora.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Atatürk's Principles: The revolutionary principles shaped Turkey's modern identity.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <section class="main-third section-nine section-info-set">
+                <div class="main-display-set">
+                    <div class="main-content main-third-content content-9">
+                        <h1>Importance Given to Education</h1>
+                        <p>
+                            The Cornerstone of Development Atatürk aimed to build the foundation of the Turkish Republic on education. Education was considered a crucial element for the nation's progress and advancement. Great importance was placed on education as one of the top priorities, ensuring the upbringing and enlightenment of the younger generation. Atatürk took significant steps to modernize the education system, increase literacy rates, and adopt a curriculum based on scientific thinking.
+                        </p>
+                    </div>
+                    <div class="main-content main-third-content content-10">
+                        <h1>Establishment of Factories</h1>
+                        <p>
+                            The Drive Towards Industrialization Atatürk aimed to achieve economic independence and development for Turkey through industrialization. To accomplish this goal, a series of factories were established, and the development of the industrial sector was encouraged. These factories strengthened the country's economic infrastructure by employing modern production techniques and technologies. Atatürk aimed to reduce dependency on foreign countries by promoting domestic production, striving for self-sufficiency, and making Turkey a self-reliant nation in the field of industry.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="main-four section-info-set">
+                <div class="main-display-set">
+                    <div class="main-content main-third-content content-11">
+                        <h1>Goals of Modernization</h1>
+                        <p>
+                            The Rebirth of the Nation Atatürk tirelessly worked towards making Turkey a modern nation and state. He took decisive steps to initiate Turkey's Westernization and modernization process. These transformative reforms included clothing reforms, women's rights and equality, legal reforms, the change of alphabet, and the establishment of secularism. Through Atatürk's vision and leadership, Turkey emerged as a contemporary nation and a democratic state, earning a respected position on the world stage.
+                        </p>
+                    </div>
+                    <div class="main-content content-12">
+                        <img src="./assets/images/MKemal3.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+    
         </section>
-        <section class="main-third section-nine section-info-set">
-            <div class="main-display-set">
-                <div class="main-content main-third-content content-9">
-                    <h1>Importance Given to Education</h1>
-                    <p>
-                        The Cornerstone of Development Atatürk aimed to build the foundation of the Turkish Republic on education. Education was considered a crucial element for the nation's progress and advancement. Great importance was placed on education as one of the top priorities, ensuring the upbringing and enlightenment of the younger generation. Atatürk took significant steps to modernize the education system, increase literacy rates, and adopt a curriculum based on scientific thinking.
-                    </p>
-                </div>
-                <div class="main-content main-third-content content-10">
-                    <h1>Establishment of Factories</h1>
-                    <p>
-                        The Drive Towards Industrialization Atatürk aimed to achieve economic independence and development for Turkey through industrialization. To accomplish this goal, a series of factories were established, and the development of the industrial sector was encouraged. These factories strengthened the country's economic infrastructure by employing modern production techniques and technologies. Atatürk aimed to reduce dependency on foreign countries by promoting domestic production, striving for self-sufficiency, and making Turkey a self-reliant nation in the field of industry.
-                    </p>
-                </div>
-            </div>
+        <section class="section-ten">
+            <h1>1881-19∞</h1>
+            <h5>“My humble body will one day turn into dust, but the Republic of Turkey will endure forever.”</h5>
         </section>
-        <section class="main-four section-info-set">
-            <div class="main-display-set">
-                <div class="main-content main-third-content content-11">
-                    <h1>Goals of Modernization</h1>
-                    <p>
-                        The Rebirth of the Nation Atatürk tirelessly worked towards making Turkey a modern nation and state. He took decisive steps to initiate Turkey's Westernization and modernization process. These transformative reforms included clothing reforms, women's rights and equality, legal reforms, the change of alphabet, and the establishment of secularism. Through Atatürk's vision and leadership, Turkey emerged as a contemporary nation and a democratic state, earning a respected position on the world stage.
-                    </p>
-                </div>
-                <div class="main-content content-12">
-                    <img src="./assets/images/MKemal3.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-    </section>
-    <section class="section-ten">
-        <h1>1881-19∞</h1>
-        <h5>“My humble body will one day turn into dust, but the Republic of Turkey will endure forever.”</h5>
-    </section>
-    </main>
-    <footer>
-        <h5>Created By <a target="_blank" href="https://github.com/Vrm4">Vrm</a></h5>
-        <a href="https://github.com/Vrm4"><img src="https://avatars.githubusercontent.com/u/71084215?v=4" alt=""></a>
-    </footer>
+        </main>
+        <footer>
+            <h5>Created By <a target="_blank" href="https://github.com/Vrm4">Vrm</a></h5>
+            <a href="https://github.com/Vrm4"><img src="https://avatars.githubusercontent.com/u/71084215?v=4" alt=""></a>
+        </footer>
+    </div>
     <script src="./assets/js/gsap.min.js"></script>
     <script src="./assets/js/ScrollTrigger.min.js"></script>
     <script src="./assets/js/main.js"></script>

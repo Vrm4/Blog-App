@@ -163,22 +163,22 @@ gsap.to('.scroll-img', {
   skewX: -5,
   onComplete: function () {
     gsap.to('.scroll-img', {
-      y: 900,
+      y: 950,
       x: 0,
       skewY: 5,
       skewX: 0,
       scrollTrigger: {
         trigger: ".main-seven2",
-        start: "top 55%",
-        end: "top 15%",
-        scrub: 1, 
+        start: "top 20%",
+        end: "top 5%",
+        scrub: 2, 
       }
     });
   },
   scrollTrigger: {
     trigger: ".main-seven",
-    start: "top 45%",
-    end: "top 25%",
+    start: "top 25%",
+    end: "top 15%",
     scrub: 1,
   }
 })
@@ -351,3 +351,16 @@ sections.forEach((section, index) => {
 
 })
 
+window.addEventListener('resize' , () => { 
+  const resDiv = document.querySelector('#responsive-div')
+  const resTitle = document.querySelector('#res-title')
+  if (window.innerWidth < 1400) {
+      resDiv.style.display = 'none';
+      resTitle.style.display = 'block';
+      resTitle.innerText = 'This Web Site Only For Computers'
+  }
+  else{
+    resDiv.style.display = 'block';
+    resTitle.style.display = 'none';
+  }
+})
